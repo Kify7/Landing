@@ -1,0 +1,33 @@
+// Nested / Anidar
+nav {
+  height: $navHeight;
+  padding: 0 100px;
+  background-color: white;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+
+  // Logo
+  .logo {
+    font-size: 30px;
+    float: left;
+    line-height: $navHeight;
+  }
+
+  // Lista no ordenada
+  ul {
+    list-style: none;
+    width: 50%;
+    float: right;
+
+    // List items
+    li {
+      line-height: $navHeight;
+      text-align: center;
+      display: block;
+      height: $navHeight;
+      float: left;
+      width: 20%;
+    }
+  }
+}

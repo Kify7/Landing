@@ -1,0 +1,41 @@
+
+main {
+  height: 100vh;
+  width: 100%;
+  perspective: 2px;
+  overflow-y: auto;
+
+  header, section {
+    width: 100%;
+    height: 80vh;
+    transform-style: preserve-3d;
+  }
+
+  header {
+    position: relative;
+
+    h1 {
+      font-size: 40px;
+      color: white;
+      margin-top: 200px;
+      margin-left: 100px;
+    }
+
+    & > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+    .text {
+      background-color: rgba(0, 0, 0, 0.51);
+    }
+
+    .background {
+      transform: translateZ(-2px) scale(2);
+      background-image: url('https://i.ytimg.com/vi/2fb-g_V-UT4/hqdefault.jpg');
+    }
+}

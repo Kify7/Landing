@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body, html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+nav {
+  height: 70px;
+  padding: 0 100px;
+  background-color: white;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+nav .logo {
+  font-size: 30px;
+  float: left;
+  line-height: 70px;
+}
+nav ul {
+  list-style: none;
+  width: 50%;
+  float: right;
+}
+nav ul li {
+  line-height: 70px;
+  text-align: center;
+  display: block;
+  height: 70px;
+  float: left;
+  width: 20%;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  perspective: 2px;
+  overflow-y: auto;
+}
+main header, main section {
+  width: 100%;
+  height: 80vh;
+  transform-style: preserve-3d;
+}
+main header {
+  position: relative;
+}
+main header h1 {
+  font-size: 40px;
+  color: white;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+main header > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+main .text {
+  background-color: rgba(0, 0, 0, 0.51);
+}
+main .background {
+  transform: translateZ(-2px) scale(2);
+  background-image: url("https://i.ytimg.com/vi/2fb-g_V-UT4/hqdefault.jpg");
+}
+
+main .info {
+  height: 50vh;
+  background-color: white;
+}
+main .button {
+  float: left;
+  margin: 5vw;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  background-color: #4e21db;
+}
+main article {
+  clear: both;
+  height: 200px;
+  border: 1px solid #ddd;
+  margin: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
